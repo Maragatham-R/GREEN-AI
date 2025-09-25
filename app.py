@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+@st.cache_resource
 
 # Load your trained model
 model = joblib.load("water_quality_predict.pkl")
